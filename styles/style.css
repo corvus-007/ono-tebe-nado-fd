@@ -55,6 +55,7 @@ body {
 
 .address {
   font-style: normal;
+  line-height: 1.35;
 }
 
 /* END common styles */
@@ -66,9 +67,13 @@ body {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   gap: 32px;
   padding: 92px 50px 96px;
+}
+
+.header__menu {
+  align-self: center;
 }
 
 .header__menu-list {
@@ -87,6 +92,8 @@ body {
 
 .header__logo {
   width: 148px;
+  padding-right: 6px;
+  padding-left: 6px;
 }
 
 .header__logo-image {
@@ -95,7 +102,8 @@ body {
 
 .header__address {
   justify-self: end;
-  max-width: 240px;
+  width: 240px;
+  margin-top: 4px;
 }
 
 /* END header */
@@ -106,7 +114,7 @@ body {
 .cover {
   position: relative;
   z-index: 0;
-  margin-bottom: 180px;
+  margin-bottom: 184px;
   padding: 165px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
@@ -160,7 +168,7 @@ body {
 }
 
 .lots__title {
-  margin-bottom: 27px;
+  margin-bottom: 30px;
   margin-left: 40px;
 }
 
@@ -187,7 +195,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  gap: 35px;
   height: 100%;
   padding: 48px 40px;
   background-repeat: no-repeat;
@@ -236,9 +244,10 @@ body {
   grid-template-areas:
     'logo title title'
     '.... text  text';
+  row-gap: 8px;
   column-gap: 25px;
   margin-bottom: 180px;
-  padding: 35px 24px 0;
+  padding: 33px 24px 0;
 }
 
 .about__logo {
@@ -261,6 +270,7 @@ body {
 .about__title {
   grid-area: title;
   align-self: center;
+  margin-top: 8px;
 }
 
 .about__text {
@@ -268,6 +278,10 @@ body {
   grid-area: text;
   gap: 24px;
   font-size: 20px;
+}
+
+.about__text p:first-of-type {
+  margin-right: 5px;
 }
 
 /* END about */
@@ -294,6 +308,9 @@ body {
 }
 
 .footer__menu-list {
+  display: grid;
+  gap: 3px;
+  margin-top: 4px;
   list-style-type: none;
 }
 
