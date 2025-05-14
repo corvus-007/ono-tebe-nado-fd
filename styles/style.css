@@ -13,10 +13,6 @@ body {
   text-transform: lowercase;
 }
 
-.link:not([href]) {
-  border-bottom-color: transparent;
-}
-
 .display-block {
   display: block;
 }
@@ -63,6 +59,7 @@ body {
 
 /* END common styles */
 
+
 /* START header */
 
 .header {
@@ -74,29 +71,18 @@ body {
   padding: 92px 50px 96px;
 }
 
-.header__menu {
-
-}
-
 .header__menu-list {
   display: flex;
   gap: 32px;
   list-style: circle;
 }
 
-.header__menu-item {
-}
-
 .header__menu-item:first-child {
-  list-style: none;
+  list-style-type: none;
 }
 
-.header__menu-link {
-
-}
-
-.header__menu-item_active .header__menu-link {
-
+.header__menu-link_active {
+  border-bottom-color: transparent;
 }
 
 .header__logo {
@@ -113,6 +99,7 @@ body {
 }
 
 /* END header */
+
 
 /* START cover */
 
@@ -228,6 +215,7 @@ body {
 }
 
 /* END lots */
+
 
 /* START about */
 
