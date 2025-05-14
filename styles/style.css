@@ -137,6 +137,16 @@ body {
   word-spacing: 0.85em;
 }
 
+.button-bet {
+  border: 1px solid currentColor;
+  padding: 13px 32px 14px;
+  color: inherit;
+  line-height: 1;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 /* END cover */
 
 
